@@ -1,0 +1,57 @@
+{
+    "displayName": "Example Bot",
+    "TeamNumber": 9999,
+    "Drivetrain": {
+        "Type": "Swerve",
+        "MaxLinearVelocity": 5.0,
+        "MaxAngularVelocity": 10.0,
+        "WheelRadius": 2.0,
+        "TrackWidth": 28.0,
+        "TrackLength": 28.0,
+        "ModuleConfig": {
+            "DriveMotor": "Kraken x60",
+            "SteerMotor": "Kraken x60",
+            "DriveRatio": 6.0,
+            "SteerRatio": 12.8
+        }
+    },
+    "Bumpers": {
+        "Extrusion": 4.0,
+        "ShowTeamNumber": true,
+        "Collider": {
+            "Front": true,
+            "Back": true,
+            "Left": true,
+            "Right": true
+        },
+        "Color": "AllianceColor",
+        "CustormColor": {
+            "R": 0,
+            "G": 0,
+            "B": 200
+        },
+        "Offsets": {
+            "Front": 0.0,
+            "Back": 0.0,
+            "Left": 0.0,
+            "Right": 0.0
+        }
+    },
+    "Axis:": {
+        "ExampleAxis": {"Value": 0.0}
+    },
+    "Keybinds": [
+        {
+            "Name": "Setpoint L1",
+            "Button": "ButtonA",
+            "OnTrue": [
+                {
+                    "Type": "SetAxis",
+                    "Axis": "ExampleAxis",
+                    "Value": 0.25
+                }
+            ]
+        }
+    ],
+    "Components":[]
+}
