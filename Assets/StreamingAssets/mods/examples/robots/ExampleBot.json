@@ -18,6 +18,7 @@
     "Bumpers": {
         "Extrusion": 4.0,
         "ShowTeamNumber": true,
+        "RoundedCorners": false,
         "Collider": {
             "Front": true,
             "Back": true,
