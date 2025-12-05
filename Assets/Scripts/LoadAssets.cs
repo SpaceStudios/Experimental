@@ -13,6 +13,7 @@ public class LoadAssets : MonoBehaviour
             // print(Application.streamingAssetsPath+"/test.txt");
             print("Contents of Test.txt");
             print(contents);
+            // Testing 2
         }
         catch (FileNotFoundException e)
         {
