@@ -1,5 +1,4 @@
 /Logs
-/Packages
 /Temp
 /UserSettings
 /Library
@@ -7,3 +6,5 @@
 
 *.meta
 *.asset
+*.slnx
+*.csproj
