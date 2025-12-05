@@ -2,18 +2,12 @@
     "displayName": "Example Bot",
     "TeamNumber": 9999,
     "Drivetrain": {
-        "Type": "Swerve",
+        "Type": "Differential",
         "MaxLinearVelocity": 5.0,
         "MaxAngularVelocity": 10.0,
-        "WheelRadius": 2.0,
+        "WheelRadius": 3.0,
         "TrackWidth": 28.0,
-        "TrackLength": 28.0,
-        "ModuleConfig": {
-            "DriveMotor": "Kraken x60",
-            "SteerMotor": "Kraken x60",
-            "DriveRatio": 6.0,
-            "SteerRatio": 12.8
-        }
+        "TrackLength": 28.0
     },
     "Bumpers": {
         "Extrusion": 4.0,
@@ -39,19 +33,29 @@
         }
     },
     "Axis:": {
-        "ExampleAxis": {"Value": 0.0}
+        "Launcher": {"Value": 0.0},
+        "Flywheel": {"Value": 0.0}
     },
     "Keybinds": [
         {
-            "Name": "Setpoint L1",
-            "Button": "ButtonA",
-            "OnTrue": [
+            "Name": "Fire",
+            "Button": "RT",
+            "onTrue": [],
+            "whileTrue": [
                 {
                     "Type": "SetAxis",
-                    "Axis": "ExampleAxis",
-                    "Value": 0.25
+                    "Axis": "Launcher",
+                    "Value": 1.0
                 }
-            ]
+            ],
+            "onFalse": [
+                {
+                    "Type": "SetAxis",
+                    "Axis": "Launcher",
+                    "Value": 0.0
+                }
+            ],
+            "whileFalse": []
         }
     ],
     "Components":[]
