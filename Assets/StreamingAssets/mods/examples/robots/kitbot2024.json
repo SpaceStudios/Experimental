@@ -1,5 +1,7 @@
 {
-    "displayName": "Example Bot",
+    "displayName": "FRC 2024 Kitbot",
+    "thumbnail": "crescendo_square",
+    "game": "examples_crescendo",
     "TeamNumber": 9999,
     "Drivetrain": {
         "Type": "Differential",

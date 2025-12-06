@@ -3,6 +3,7 @@
 /UserSettings
 /Library
 /Assets/TutorialInfo
+/Builds
 
 *.meta
 *.asset

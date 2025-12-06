@@ -1,19 +1,15 @@
 {
     "displayName": "Example Bot",
+    "thumbnail": "test_9999",
+    "game": "examples_crescendo",
     "TeamNumber": 9999,
     "Drivetrain": {
         "Type": "Swerve",
         "MaxLinearVelocity": 5.0,
         "MaxAngularVelocity": 10.0,
         "WheelRadius": 2.0,
-        "TrackWidth": 28.0,
-        "TrackLength": 28.0,
-        "ModuleConfig": {
-            "DriveMotor": "Kraken x60",
-            "SteerMotor": "Kraken x60",
-            "DriveRatio": 6.0,
-            "SteerRatio": 12.8
-        }
+        "TrackWidth": 24.0,
+        "TrackLength": 24.0
     },
     "Bumpers": {
         "Extrusion": 4.0,
@@ -54,5 +50,17 @@
             ]
         }
     ],
-    "Components":[]
+    "Components": [],
+    "CameraOffset": {
+        "Pos": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+        },
+        "Rot": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+        }
+    }
 }
